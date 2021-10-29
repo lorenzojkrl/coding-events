@@ -1,0 +1,14 @@
+div {
+  border: 1px solid black;
+  background-color: azure;
+  height: 200px;
+}
+
+.grandchild-container {
+  margin: auto;
+  border: 1px dashed black;
+  background-color: royalblue;
+  color: white;
+  height: 100px;
+  width: 200px;
+}
