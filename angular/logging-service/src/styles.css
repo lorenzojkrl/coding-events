@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 20px;
+}
