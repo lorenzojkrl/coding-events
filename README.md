@@ -1,3 +1,3 @@
-# Codecademy Events Material
+# Coding material & references
 
-In this repo you will find the material presented during Codecademy's events
+In this repo you will find the material presented in articles and events
