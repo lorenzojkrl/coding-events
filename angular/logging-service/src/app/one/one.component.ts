@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { LoggingService } from '../logging-service.service';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { BookService } from '../book.service';
 
 @Component({
   selector: 'app-one',
   templateUrl: './one.component.html',
   styleUrls: ['./one.component.css'],
 })
-export class OneComponent implements OnInit {
-  constructor(private logService: LoggingService) {}
+export class OneComponent {
+  @ViewChild('titleInput')
+  titleInputReference!: ElementRef;
 
-  ngOnInit(): void {}
+  constructor(private bookService: BookService) {}
 
-  onClick() {
-    this.logService.addClick();
+  onAddBook() {
+    this.bookService.createBook(this.titleInputReference.nativeElement.value);
   }
 }
