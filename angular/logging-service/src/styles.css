@@ -5,7 +5,23 @@ h1 {
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border: 1px solid black;
   padding: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  width: 200px;
+  height: 50px;
+  background-color: azure;
 }
