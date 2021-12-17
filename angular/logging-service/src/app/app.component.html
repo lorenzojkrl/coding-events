@@ -5,4 +5,10 @@
     <app-one></app-one>
     <app-two></app-two>
   </div>
+  <hr />
+  <div *ngIf="booksList" class="wrapper">
+    <div *ngFor="let book of booksList" class="book">
+      {{ book.title }}
+    </div>
+  </div>
 </div>
