@@ -6,8 +6,9 @@
     <app-two></app-two>
   </div>
   <hr />
-  <div *ngIf="booksList" class="wrapper">
+  <div *ngIf="booksList" class="wrapper column">
     <div *ngFor="let book of booksList" class="book">
+      <button class="button" (click)="onRemoveBook(book)">X</button>
       {{ book.title }}
     </div>
   </div>
