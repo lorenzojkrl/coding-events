@@ -1,1 +1,9 @@
+<h1>{{ title }}</h1>
+<p>{{ subtitle }}</p>
 
+<input placeholder="Write and Add" [(ngModel)]="userInput" />
+<button (click)="onSubmit()">Add</button>
+
+<ul>
+  <li *ngFor="let item of todoList" (click)="onDelete(item)">{{ item }}</li>
+</ul>
