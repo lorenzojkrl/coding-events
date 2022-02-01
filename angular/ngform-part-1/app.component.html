@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+  <label for="userInput">Add Task</label>
+  <input placeholder="Write a task" ngModel name="userInput" required />
+  <label for="date">By when</label>
+  <input type="date" name="date" ngModel />
+  <button type="submit">Add</button>
+</form>
