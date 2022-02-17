@@ -1,0 +1,24 @@
+<h1>{{ title }}</h1>
+
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm" ngNativeValidate>
+  <div ngModelGroup="taskInfo">
+    <label for="userInput">Add Task</label>
+    <input placeholder="Write a task" ngModel name="userInput" required />
+    <label for="taskDescription">Description</label>
+    <input
+      placeholder="Steps to complete the task"
+      ngModel
+      name="taskDescription"
+    />
+  </div>
+  <label for="date">By when</label>
+  <input type="date" name="date" ngModel />
+  <button type="submit">Add</button>
+</form>
+
+<ul>
+  <li *ngFor="let item of todoList">
+    <button (click)="onDelete(item.id)">X</button>
+    {{ item.title }} {{ item.date && "by" }} {{ item.date ? item.date : "" }}
+  </li>
+</ul>

@@ -1,0 +1,27 @@
+/* This file goes in /app and is not part of AppComponent*/
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  margin: 12px;
+}
+
+form input {
+  margin-bottom: 12px;
+}
+
+form button:hover {
+  cursor: pointer;
+}
