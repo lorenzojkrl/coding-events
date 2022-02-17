@@ -11,7 +11,7 @@ export class AppComponent {
   notification?: string;
 
   constructor(private notificationService: NotificationService) {
-    this.notificationService.messageChanges$.subscribe(
+    this.notificationService.notificationChanges$.subscribe(
       (textToDisplay: string) => {
         this.notification = textToDisplay;
       }

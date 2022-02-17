@@ -8,7 +8,7 @@ export class NotificationService {
   constructor() {}
 
   private notificationSource = new Subject<string>();
-  messageChanges$ = this.notificationSource.asObservable();
+  notificationChanges$ = this.notificationSource.asObservable();
 
   changeText(textToDisplay: string) {
     this.notificationSource.next(textToDisplay);

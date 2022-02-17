@@ -1,3 +1,10 @@
 h1 {
   text-align: center;
 }
+
+p {
+  border: 1px dashed red;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.294);
+}
